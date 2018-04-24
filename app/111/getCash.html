@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="Cache-Control:private" content="max-age=0" />
+		 <meta name="apple-touch-fullscreen" content="yes" />
+	    <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 设置苹果工具栏颜色 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit" />
+	    <!--百度禁止转码-->
+	    <meta http-equiv="Cache-Control" content="no-siteapp" />
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true" />
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320" />
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait" />
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait" />
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes" />
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true" />
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application" />
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app" />
+	    <!-- windows phone 点击无高光 -->
+	    <meta name="msapplication-tap-highlight" content="no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <div class="commmon_box">
+        <div class="common_head clearfix btn_blue mySelf">
+            <span class="l"></span>
+            <h2 class="l text-fff">黑妹卡盟优惠</h2>
+            <em class="r"></em>
+		</div>
+		<div class="account_settings clearfix">
+			<dl class="l account_settings_subordinate one">
+				<dt class="over">147</dt>
+				<dd class="over">我的下级</dd>
+			</dl>
+			<dl class="l account_settings_subordinate">
+				<dt class="over">52313.23</dt>
+				<dd class="over">我的下级</dd>
+			</dl>
+			<a href="javascript:;" class="r btn btn_default">提现</a>
+		</div>
+		<div class="accountSettings clearfix">
+			<a href="javascript:;">
+				<dl class="">
+					<dt><img src="images/zy_lb.png" alt=""></dt>
+					<dd>公告管理</dd>
+				</dl>
+			</a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt><img src="images/zy_logo.png" alt=""></dt>
+				<dd>logo管理</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt><img src="images/zy_settings.png" alt=""></dt>
+				<dd>名称设置</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt><img src="images/zy_xj.png" alt=""></dt>
+				<dd>我的下级</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt><img src="images/zy_ye.png" alt=""></dt>
+				<dd>余额明细</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt><img src="images/zy_code.png" alt=""></dt>
+				<dd>二维码</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="wzurl">
+				<dt><img src="images/zy_ewm.png" alt=""></dt>
+				<dd>网站URL</dd>
+			</dl></a>
+			
+			<a href="javascript:;"><dl class="">
+				<dt></dt>
+				<dd>&nbsp;</dd>
+			</dl></a>
+			<a href="javascript:;"><dl class="">
+				<dt></dt>
+				<dd>&nbsp;</dd>
+			</dl></a>
+			
+		</div>
+	</div>
+	<div class="copyUrl hide">
+		<div class="main" id="main">
+			<h2>
+				<span>分站URL</span>
+				<em><img src="images/zy_cha_fff.png" alt=""></em>
+			</h2>
+			<div class="clearfix">
+				<span class="l over">https://image.baidu.com/search/detail?detail</span>
+				<em class="r">复制</em>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/plugins/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function(){
+			$(".wzurl").on("click",function(){
+				$(".copyUrl").addClass("show");
+			});
+			$(".main h2 em").on("click",function(){
+				$(".copyUrl").removeClass("show");
+			});
+			$(".copyUrl").on("click",function(e){
+				if($(e.target).closest("#main").length == 0){
+					$(".copyUrl").removeClass("show");
+				}
+			})
+		})
+	</script>
+</html>
