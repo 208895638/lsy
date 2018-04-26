@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>提现记录</title>
+    <title>logo管理</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="Cache-Control:private" content="max-age=0" />
     <meta name="apple-touch-fullscreen" content="yes" />
@@ -45,49 +45,37 @@
             <span class="l">
 				<img src="images/back.png" />
 			</span>
-            <h2 class="l">提现记录</h2>
+            <h2 class="l">logo管理</h2>
             <em class="r"></em>
         </div>
-        <div class="historyOfGetCash">
-            <ul>
-                <li class="clearfix">
-                    <div class="l zy_content">
-                        <dl>
-                            <dt class="clearfix"><span class="l">微信提现</span> <em class="text_blue l common_bg_blue">等待处理</em></dt>
-                            <dd>2017-12-06 18:48:36</dd>
-                        </dl>
+        <div class="zy_logo_box">
+            <div class="box ">
+                <form action="">
+                    <div class="logo_img_box">
+
                     </div>
-                    <div class="r zy_price">
-                        4.58
+                    <div class="btn_logo">
+                        上传图片
                     </div>
-                </li>
-                <li class="clearfix">
-                    <div class="l zy_content">
-                        <dl>
-                            <dt class="clearfix"><span class="l">微信提现</span> <em class="text_999 l common_bg_999">等待处理</em></dt>
-                            <dd>2017-12-06 18:48:36</dd>
-                        </dl>
-                    </div>
-                    <div class="r zy_price">
-                        4.58
-                    </div>
-                </li>
-                <li class="clearfix">
-                    <div class="l zy_content">
-                        <dl>
-                            <dt class="clearfix"><span class="l">微信提现</span> <em class="text_green l common_bg_green">等待处理</em></dt>
-                            <dd>2017-12-06 18:48:36</dd>
-                        </dl>
-                    </div>
-                    <div class="r zy_price">
-                        4.58
-                    </div>
-                </li>
-            </ul>
+                    <input type="file" id="imgUploadBtn" accept="image/*" />
+                </form>
+            </div>
+            <a href="javascript:;" class="btn btn_blue"> 确认</a>
+            <p>注: 为保证您上传logo保证质量,logo尺寸尽量长:宽 = 3:1</p>
         </div>
     </div>
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/plugins/rem.js" type="text/javascript" charset="utf-8"></script>
+<script>
+</script>
+<script>
+    $(function() {
+        $("#imgUploadBtn").on("click", function() {
+            console.log(111)
+            $(".box").addClass("on");
+        })
+    })
+</script>
 
 </html>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   background: #efeff4;
@@ -22,6 +23,15 @@ body, html {
 
 .text_blue {
   color: #4399fe !important; }
+
+.common_bg_blue {
+  background: #edf5ff !important; }
+
+.common_bg_999 {
+  background: #f0f0f0 !important; }
+
+.common_bg_green {
+  background: #e8ffe7 !important; }
 
 .btn {
   display: block;
@@ -225,7 +235,8 @@ body, html {
   position: relative;
   padding: 0.14rem 0; }
 
-.card .tab_content .tab_box .per .zy_input input, .card .tab_content .tab_box .per .zy_input label {
+.card .tab_content .tab_box .per .zy_input input,
+.card .tab_content .tab_box .per .zy_input label {
   font: 0.24rem/0.42rem "微软雅黑";
   display: block;
   width: 70%;
@@ -240,7 +251,8 @@ body, html {
   padding: 0.14rem 0;
   position: relative; }
 
-.card .tab_content .tab_box .per p span, .card .tab_content .tab_box .per p em {
+.card .tab_content .tab_box .per p span,
+.card .tab_content .tab_box .per p em {
   font: 0.24rem/0.42rem "微软雅黑"; }
 
 .card .tab_content .tab_box .per p span {
@@ -279,12 +291,14 @@ body, html {
   text-align: center;
   vertical-align: top; }
 
-.card .tab_content .tab_box .per p strong button, .card .tab_content .tab_box .per p strong input {
+.card .tab_content .tab_box .per p strong button,
+.card .tab_content .tab_box .per p strong input {
   display: inline-block;
   vertical-align: top;
   font: 0.2rem/0.62rem "微软雅黑"; }
 
-.card .tab_content .tab_box .per p strong button, .card .tab_content .tab_box .per p strong input {
+.card .tab_content .tab_box .per p strong button,
+.card .tab_content .tab_box .per p strong input {
   width: 0.92rem;
   height: 0.62rem;
   background: #f9f9f9;
@@ -294,7 +308,8 @@ body, html {
   border: 0.01rem solid #cccccc;
   border-radius: 0.04rem; }
 
-.card .tab_content .tab_box .per p strong button, .card .tab_content .tab_box .per p strong input[disabled] {
+.card .tab_content .tab_box .per p strong button,
+.card .tab_content .tab_box .per p strong input[disabled] {
   color: #000; }
 
 .card .tab_content .tab_box .per p strong input {
@@ -339,7 +354,8 @@ body, html {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 
-.card .tab_content .tab_box .per .tab_info .goods h4, .card .tab_content .tab_box .per .tab_info .goods li {
+.card .tab_content .tab_box .per .tab_info .goods h4,
+.card .tab_content .tab_box .per .tab_info .goods li {
   font: 0.27rem/0.8rem "微软雅黑";
   color: #333;
   text-align: left;
@@ -386,14 +402,17 @@ body, html {
 .card .tab_content .tab_box .order_per .order_infor dl dt {
   margin-bottom: 0.16rem; }
 
-.card .tab_content .tab_box .order_per .order_infor dl dt, .card .tab_content .tab_box .order_per .order_infor dl dd {
+.card .tab_content .tab_box .order_per .order_infor dl dt,
+.card .tab_content .tab_box .order_per .order_infor dl dd {
   font: 0.24rem/0.4rem "微软雅黑";
   color: #a0a0a0; }
 
-.card .tab_content .tab_box .order_per .order_infor dl dt span, .card .tab_content .tab_box .order_per .order_infor dl dd span {
+.card .tab_content .tab_box .order_per .order_infor dl dt span,
+.card .tab_content .tab_box .order_per .order_infor dl dd span {
   width: 1.2rem; }
 
-.card .tab_content .tab_box .order_per .order_infor dl dt em, .card .tab_content .tab_box .order_per .order_infor dl dd em {
+.card .tab_content .tab_box .order_per .order_infor dl dt em,
+.card .tab_content .tab_box .order_per .order_infor dl dd em {
   width: 4.55rem; }
 
 .card .tab_content .tab_box .order_per .order_infor .on dd {
@@ -673,7 +692,8 @@ body, html {
 .zy_infor .zy_tab_infor .zy_agreement {
   font-size: 0; }
 
-.zy_infor .zy_tab_infor .zy_agreement em, .zy_infor .zy_tab_infor .zy_agreement a {
+.zy_infor .zy_tab_infor .zy_agreement em,
+.zy_infor .zy_tab_infor .zy_agreement a {
   font: 0.24rem/0.3rem "微软雅黑";
   color: #333; }
 
@@ -835,7 +855,8 @@ body, html {
   left: 0;
   margin: auto; }
 
-.choose_system li div h2, .choose_system li div p {
+.choose_system li div h2,
+.choose_system li div p {
   font: 0.26rem/0.36rem "微软雅黑";
   color: #999; }
 
@@ -886,14 +907,22 @@ body, html {
   padding: 0 0.2rem;
   height: 0.9rem;
   border-bottom: 0.01rem solid #e3e3e3;
-  background: #fff; }
-
-.common_head span, .common_head em {
-  width: 0.28rem;
-  height: 0.9rem;
+  background: #fff;
   position: relative; }
 
-.common_head span img, .common_head em img {
+.common_head span,
+.common_head em {
+  width: 0.28rem;
+  height: 0.9rem;
+  position: relative;
+  font: .26rem/.9rem "微软雅黑";
+  color: #333; }
+
+.common_head em {
+  width: auto; }
+
+.common_head span img,
+.common_head em img {
   height: 0.3rem;
   position: absolute;
   left: 0;
@@ -906,6 +935,14 @@ body, html {
   text-align: center;
   font: 0.3rem/0.9rem "微软雅黑";
   color: #333; }
+
+.common_head h2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  width: 3.2rem; }
 
 .common_info {
   width: 100%;
@@ -1002,7 +1039,8 @@ body, html {
 .pc_box ul .center {
   margin: 0 68px; }
 
-.account_box dl dt, .account_box dl dd {
+.account_box dl dt,
+.account_box dl dd {
   font: 0.24rem/0.76rem "微软雅黑";
   color: #999;
   text-align: left;
@@ -1118,6 +1156,8 @@ body, html {
   height: 1.06rem;
   border-bottom: 0 solid #4399fe;
   color: #fff; }
+  .mySelf span {
+    height: 100%; }
   .mySelf .text-fff {
     font: 0.32rem/1.06rem "微软雅黑"; }
 
@@ -1254,3 +1294,181 @@ body, html {
   width: 100%;
   text-align: center;
   color: #999999; }
+
+.common_box {
+  padding: .3rem 5.6%; }
+  .common_box .box {
+    position: relative; }
+    .common_box .box h2 {
+      position: absolute;
+      right: .23rem;
+      bottom: .23rem;
+      font: .21rem/.3rem "微软雅黑";
+      color: #ccc; }
+  .common_box textarea {
+    width: 90%;
+    display: block;
+    resize: none;
+    height: 2.54rem;
+    padding: .11rem 5%;
+    border-radius: .08rem;
+    font: .26rem/.46rem "微软雅黑";
+    color: #ccc;
+    margin-bottom: .4rem; }
+  .common_box textarea:focus {
+    color: #333;
+    transition: .3s ease-in; }
+  .common_box .substation .per {
+    padding: 0 .29rem;
+    border-radius: .08rem;
+    background: #fff;
+    margin-bottom: .4rem; }
+    .common_box .substation .per label,
+    .common_box .substation .per input {
+      font: .22rem/.71rem "微软雅黑";
+      height: 0.71rem;
+      padding: 0; }
+    .common_box .substation .per label {
+      margin-right: .48rem;
+      color: #666; }
+    .common_box .substation .per input {
+      color: #999; }
+    .common_box .substation .per input:focus {
+      color: #666;
+      transition: .3s ease-in; }
+  .common_box .substation a {
+    width: 100%; }
+  .common_box .subordinate ul {
+    width: 100%; }
+    .common_box .subordinate ul li {
+      margin-bottom: 0.2rem;
+      background: #fff;
+      border-radius: 0.06rem;
+      padding: .06rem .19rem .26rem .19rem; }
+      .common_box .subordinate ul li h2 span {
+        font: .29rem/.79rem "微软雅黑";
+        color: #333;
+        width: 5rem;
+        font-weight: bold; }
+      .common_box .subordinate ul li h2 em {
+        font: .22rem/.79rem "微软雅黑";
+        color: #999; }
+      .common_box .subordinate ul li dl dt,
+      .common_box .subordinate ul li dl dd {
+        font: .22rem/.29rem "微软雅黑";
+        color: #333;
+        padding-left: .4rem; }
+      .common_box .subordinate ul li dl dt {
+        background: url(../images/zy_clock.png) no-repeat left center;
+        background-size: 0.29rem; }
+      .common_box .subordinate ul li dl dd {
+        background: url(../images/zy_earth.png) no-repeat left center;
+        background-size: 0.29rem; }
+  .common_box .getcash_user_info {
+    width: 6.69rem;
+    height: 1.28rem;
+    box-sizing: border-box;
+    border: .01rem solid #4399fe;
+    border-radius: .08rem; }
+
+.padding_5 {
+  padding-left: 2.6%;
+  padding-right: 2.6%; }
+
+.historyOfGetCash ul li {
+  padding: .17rem .19rem;
+  background: #fff;
+  border-top: .01rem solid #efeff4; }
+  .historyOfGetCash ul li .zy_content dt {
+    font-size: 0; }
+    .historyOfGetCash ul li .zy_content dt span {
+      font: .26rem/.53rem "微软雅黑";
+      color: #333;
+      margin-right: .22rem; }
+    .historyOfGetCash ul li .zy_content dt em {
+      display: inline-block;
+      vertical-align: top;
+      font: .18rem/.18rem "微软雅黑";
+      padding: .08rem .15rem;
+      margin-top: .1rem;
+      border-radius: .04rem;
+      text-align: center; }
+  .historyOfGetCash ul li .zy_content dd {
+    font: .19rem/.33rem "微软雅黑";
+    color: #999; }
+  .historyOfGetCash ul li .zy_price {
+    font: .22rem/.91rem "微软雅黑";
+    color: #4499ff;
+    font-weight: bold; }
+
+.zy_logo_box {
+  position: relative;
+  padding-top: 3.27rem; }
+  .zy_logo_box .box {
+    width: 6.67rem;
+    height: 2.21rem;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    border: .01rem solid #4399fe;
+    border-radius: .08rem;
+    margin-bottom: 1.06rem; }
+    .zy_logo_box .box .logo_img_box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2; }
+      .zy_logo_box .box .logo_img_box img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 3;
+        height: 100%; }
+    .zy_logo_box .box .btn_logo {
+      position: absolute;
+      z-index: 4;
+      width: 1.56rem;
+      height: .55rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      font: .24rem/.57rem "微软雅黑";
+      color: #69adfe;
+      border: .01rem solid #69adfe;
+      border-radius: .04rem;
+      text-align: center; }
+    .zy_logo_box .box input {
+      position: absolute;
+      z-index: 5;
+      width: 1.58rem;
+      height: .57rem;
+      font: .24rem/.57rem "微软雅黑";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      opacity: 0;
+      filter: alpha(opacity=0); }
+  .zy_logo_box .on {
+    background: rgba(0, 0, 0, 0.6); }
+    .zy_logo_box .on .btn_logo {
+      color: #fff;
+      border-color: #fff; }
+  .zy_logo_box p {
+    position: fixed;
+    left: 0;
+    bottom: .5rem;
+    width: 100%;
+    font: .24rem/.24rem "微软雅黑";
+    color: #999;
+    text-align: center; }

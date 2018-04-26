@@ -31,6 +31,18 @@ html {
     color: #4399fe !important;
 }
 
+.common_bg_blue {
+    background: #edf5ff!important;
+}
+
+.common_bg_999 {
+    background: #f0f0f0!important;
+}
+
+.common_bg_green {
+    background: #e8ffe7!important;
+}
+
 .btn {
     display: block;
     font: 0.25rem/0.71rem "微软雅黑";
@@ -610,9 +622,9 @@ html {
 }
 
 .card .card_content li a p {
-    width: 6.3rem;
-    font: 0.22rem/0.38rem "微软雅黑";
+    font: 0.24rem/0.30rem "微软雅黑";
     color: #333;
+    padding:0 .22rem;
 }
 
 .safe {
@@ -962,11 +974,17 @@ html {
 .zy_index header h2 img {
     height: 0.47rem;
 }
-
+.zy_index header ul{
+    position: absolute;
+    top:.17rem;
+    right: .2rem;
+}
 .zy_index header ul li {
     position: relative;
     margin-left: 0.2rem;
     width: 0.48rem;
+    background: #e4effb;
+    border-radius: .24rem;
     height: 0.48rem;
 }
 
@@ -982,10 +1000,11 @@ html {
     right: 0;
     bottom: 0;
     margin: auto;
+    width: 0.24rem;
 }
 
 .zy_index header ul .menu a img {
-    width: 0.4rem;
+    width: 0.24rem;
 }
 
 .user_box {
@@ -1085,6 +1104,7 @@ html {
     height: 0.9rem;
     border-bottom: 0.01rem solid #e3e3e3;
     background: #fff;
+    position: relative;
 }
 
 .common_head span,
@@ -1092,6 +1112,12 @@ html {
     width: 0.28rem;
     height: 0.9rem;
     position: relative;
+    font: .26rem/.9rem "微软雅黑";
+    color: #333;
+}
+
+.common_head em {
+    width: auto;
 }
 
 .common_head span img,
@@ -1109,6 +1135,15 @@ html {
     text-align: center;
     font: 0.3rem/0.9rem "微软雅黑";
     color: #333;
+}
+
+.common_head h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 3.2rem;
 }
 
 .common_info {
@@ -1359,6 +1394,9 @@ html {
     height: 1.06rem;
     border-bottom: 0 solid #4399fe;
     color: #fff;
+    span {
+        height: 100%;
+    }
     .text-fff {
         font: 0.32rem/1.06rem "微软雅黑";
     }
@@ -1618,5 +1656,259 @@ html {
                 }
             }
         }
+    }
+    .getcash_user_info {
+        width: 100%;
+        height: 1.28rem;
+        box-sizing: border-box;
+        border: .01rem solid #eee;
+        border-radius: .08rem;
+        padding: .27rem 0;
+        background: #fff;
+        margin-bottom: .3rem;
+        h3 {
+            width: 1.01rem;
+            height: .74rem;
+            position: relative;
+            img {
+                height: .4rem;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        dl {
+            dt,
+            dd {
+                font: .27rem/.4rem "微软雅黑";
+                color: #999;
+            }
+            dt {
+                font-weight: bold;
+                color: #333;
+            }
+        }
+    }
+    .on {
+        background: #fff url(../images/true1.png) no-repeat right bottom;
+        background-size: .32rem;
+        border-color:#4399fe; 
+        transition: .3s ease-in;
+    }
+    .getcash{
+        padding-top: .27rem ;
+        box-sizing: border-box;
+        border: .01rem solid #eee;
+        border-radius: .08rem;
+        background: #fff;
+        
+        h2{
+            font: .21rem/.21rem "微软雅黑";
+            color: #999;
+            margin-bottom: .35rem;
+            padding: 0 0.28rem;
+        }
+        dl{
+            dt,dd{
+                padding: 0 0.28rem;
+            }
+            dt{
+                border-bottom: .01rem solid #e3e3e3;
+                padding-bottom: .34rem;
+                span{
+                    font: .42rem/.42rem "微软雅黑";
+                    color: #333;
+                    font-weight: bold;
+                    font{
+                        font-size: .22rem;
+                        font-weight: bold;
+                    }
+                    i{
+                        font-weight: bold;
+                    }
+                }
+                em{
+                    font: .22rem/.22rem "微软雅黑";
+                    color: #fe7b22;
+                    margin-top: .2rem;
+                }
+            }
+            dd{
+                font: .21rem/.67rem "微软雅黑";
+                color: #666;
+            }
+        }
+        
+    }
+    a{
+        margin-top: .6rem;
+        width: 100%;
+    }
+}
+
+.padding_5 {
+    padding-left: 2.6%;
+    padding-right: 2.6%;
+}
+
+.historyOfGetCash {
+    ul {
+        li {
+            padding: .17rem .19rem;
+            background: #fff;
+            border-top: .01rem solid #efeff4;
+            .zy_content {
+                dt {
+                    font-size: 0;
+                    span {
+                        font: .26rem/.53rem "微软雅黑";
+                        color: #333;
+                        margin-right: .22rem
+                    }
+                    em {
+                        display: inline-block;
+                        vertical-align: top;
+                        font: .18rem/.18rem "微软雅黑";
+                        padding: .08rem .15rem;
+                        margin-top: .1rem;
+                        border-radius: .04rem;
+                        text-align: center;
+                    }
+                }
+                dd {
+                    font: .19rem/.33rem "微软雅黑";
+                    color: #999;
+                }
+            }
+            .zy_price {
+                font: .22rem/.91rem "微软雅黑";
+                color: #4499ff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.zy_logo_box {
+    position: relative;
+    padding-top: 3.27rem;
+    .box {
+        width: 6.67rem;
+        height: 2.21rem;
+        margin: 0 auto;
+        position: relative;
+        background: #fff;
+        border: .01rem solid #4399fe;
+        border-radius: .08rem;
+        margin-bottom: 1.06rem;
+        .logo_mask {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 4;
+            display: none;
+        }
+        .logo_img_box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            img {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 3;
+                height: 100%;
+            }
+        }
+        .btn_logo {
+            position: absolute;
+            z-index: 5;
+            width: 1.56rem;
+            height: .55rem;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            font: .24rem/.57rem "微软雅黑";
+            color: #69adfe;
+            border: .01rem solid #69adfe;
+            border-radius: .04rem;
+            text-align: center;
+        }
+        input {
+            position: absolute;
+            z-index: 5;
+            width: 1.58rem;
+            height: .57rem;
+            font: .24rem/.57rem "微软雅黑";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+    .zy_logo_confim {
+        .btn_gray {
+            background: #bbb;
+            color: #fff;
+        }
+    }
+    .on {
+        .btn_logo {
+            color: #fff;
+            border-color: #fff;
+        }
+        .logo_mask {
+            display: block;
+        }
+    }
+    p {
+        position: fixed;
+        left: 0;
+        bottom: .5rem;
+        width: 100%;
+        font: .24rem/.24rem "微软雅黑";
+        color: #999;
+        text-align: center;
+    }
+}
+.mySubstation{
+    margin: 0.19rem 0.2rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+    padding: .15rem .33rem;
+    background:#fff url(../images/zy_sub.png) no-repeat right center;
+    background-size: 2.58rem;
+    h2{
+        font: .31rem/.43rem "微软雅黑";
+        color: #333;
+    }
+    h3{
+        font: .18rem/.3rem "微软雅黑";
+        color: #666;
+        margin-bottom: .1rem;
+    }
+    p{
+        
+        width: 1.21rem;
+        font: .17rem/.31rem "微软雅黑";
     }
 }
