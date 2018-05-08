@@ -18,6 +18,14 @@ html {
 .text_333 {
   color: #333 !important; }
 
+.text_red {
+  color: red !important; }
+
+body .opacity_6 {
+  opacity: 0.6 !important;
+  filter: alpha(opacity=60) !important;
+  color: #BADCF5 !important; }
+
 .text_666 {
   color: #666 !important; }
 
@@ -113,6 +121,14 @@ html {
   background: rgba(0, 0, 0, 0.6);
   z-index: 9999;
   transition: .3s ease-in; }
+
+.one .cancel {
+  display: none !important; }
+
+.one .confirm {
+  display: block;
+  float: none;
+  margin: 0 auto; }
 
 .toast .toast_box {
   width: 5.35rem;
@@ -503,9 +519,9 @@ html {
   background: #42c095; }
 
 .card .card_content li a p {
-  width: 6.3rem;
-  font: 0.22rem/0.38rem "微软雅黑";
-  color: #333; }
+  font: 0.24rem/0.30rem "微软雅黑";
+  color: #333;
+  padding: 0 .22rem; }
 
 .safe {
   position: fixed;
@@ -803,10 +819,17 @@ html {
 .zy_index header h2 img {
   height: 0.47rem; }
 
+.zy_index header ul {
+  position: absolute;
+  top: .17rem;
+  right: .2rem; }
+
 .zy_index header ul li {
   position: relative;
   margin-left: 0.2rem;
   width: 0.48rem;
+  background: #e4effb;
+  border-radius: .24rem;
   height: 0.48rem; }
 
 .zy_index header ul .account {
@@ -819,10 +842,11 @@ html {
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto; }
+  margin: auto;
+  width: 0.24rem; }
 
 .zy_index header ul .menu a img {
-  width: 0.4rem; }
+  width: 0.24rem; }
 
 .user_box {
   width: 100%;
@@ -1365,11 +1389,85 @@ html {
         background: url(../images/zy_earth.png) no-repeat left center;
         background-size: 0.29rem; }
   .common_box .getcash_user_info {
-    width: 6.69rem;
-    height: 1.28rem;
+    width: 100%;
     box-sizing: border-box;
-    border: .01rem solid #4399fe;
-    border-radius: .08rem; }
+    border: .01rem solid #eee;
+    border-radius: .08rem;
+    padding: 0.1rem .27rem;
+    background: #fff;
+    margin-bottom: .3rem; }
+    .common_box .getcash_user_info h3 {
+      width: 1.01rem;
+      height: .74rem;
+      position: relative; }
+      .common_box .getcash_user_info h3 img {
+        height: .4rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+    .common_box .getcash_user_info dl dt,
+    .common_box .getcash_user_info dl dd {
+      font: .27rem/.4rem "微软雅黑";
+      color: #999; }
+      .common_box .getcash_user_info dl dt label,
+      .common_box .getcash_user_info dl dd label {
+        display: block;
+        font: .2rem/.5rem "微软雅黑";
+        color: #666; }
+      .common_box .getcash_user_info dl dt input,
+      .common_box .getcash_user_info dl dd input {
+        display: block;
+        padding: 0 .1rem;
+        margin-left: .1rem;
+        font: .2rem/.5rem "微软雅黑";
+        color: #999;
+        border-radius: .06rem; }
+      .common_box .getcash_user_info dl dt input:focus,
+      .common_box .getcash_user_info dl dd input:focus {
+        color: #666; }
+    .common_box .getcash_user_info dl dt {
+      margin-bottom: .1rem; }
+  .common_box .getcash {
+    padding-top: .27rem;
+    box-sizing: border-box;
+    border: .01rem solid #eee;
+    border-radius: .08rem;
+    background: #fff; }
+    .common_box .getcash h2 {
+      font: .21rem/.21rem "微软雅黑";
+      color: #999;
+      margin-bottom: .35rem;
+      padding: 0 0.28rem; }
+    .common_box .getcash dl dt, .common_box .getcash dl dd {
+      padding: 0 0.28rem; }
+    .common_box .getcash dl dt {
+      border-bottom: .01rem solid #e3e3e3;
+      padding-bottom: .34rem; }
+      .common_box .getcash dl dt span {
+        font: .42rem/.42rem "微软雅黑";
+        color: #333;
+        font-weight: bold; }
+        .common_box .getcash dl dt span font {
+          font-size: .22rem;
+          font-weight: bold; }
+        .common_box .getcash dl dt span i {
+          font-weight: bold; }
+          .common_box .getcash dl dt span i input {
+            width: 3.6rem;
+            font: .42rem/.42rem "微软雅黑"; }
+      .common_box .getcash dl dt em {
+        font: .22rem/.22rem "微软雅黑";
+        color: #fe7b22;
+        margin-top: .2rem; }
+    .common_box .getcash dl dd {
+      font: .21rem/.67rem "微软雅黑";
+      color: #666; }
+  .common_box a {
+    margin-top: .6rem;
+    width: 100%; }
 
 .padding_5 {
   padding-left: 2.6%;
@@ -1413,6 +1511,15 @@ html {
     border: .01rem solid #4399fe;
     border-radius: .08rem;
     margin-bottom: 1.06rem; }
+    .zy_logo_box .box .logo_mask {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      display: none; }
     .zy_logo_box .box .logo_img_box {
       position: absolute;
       width: 100%;
@@ -1432,7 +1539,7 @@ html {
         height: 100%; }
     .zy_logo_box .box .btn_logo {
       position: absolute;
-      z-index: 4;
+      z-index: 5;
       width: 1.56rem;
       height: .55rem;
       top: 0;
@@ -1459,11 +1566,14 @@ html {
       display: block;
       opacity: 0;
       filter: alpha(opacity=0); }
-  .zy_logo_box .on {
-    background: rgba(0, 0, 0, 0.6); }
-    .zy_logo_box .on .btn_logo {
-      color: #fff;
-      border-color: #fff; }
+  .zy_logo_box .zy_logo_confim .btn_gray {
+    background: #bbb;
+    color: #fff; }
+  .zy_logo_box .on .btn_logo {
+    color: #fff;
+    border-color: #fff; }
+  .zy_logo_box .on .logo_mask {
+    display: block; }
   .zy_logo_box p {
     position: fixed;
     left: 0;
@@ -1472,3 +1582,317 @@ html {
     font: .24rem/.24rem "微软雅黑";
     color: #999;
     text-align: center; }
+
+.mySubstation {
+  margin: 0.19rem 0.2rem;
+  border-radius: 0.08rem;
+  overflow: hidden;
+  padding: .15rem .33rem;
+  background: #fff url(../images/zy_sub.png) no-repeat right center;
+  background-size: 2.58rem; }
+  .mySubstation h2 {
+    font: .31rem/.43rem "微软雅黑";
+    color: #333; }
+  .mySubstation h3 {
+    font: .18rem/.3rem "微软雅黑";
+    color: #666;
+    margin-bottom: .1rem; }
+  .mySubstation p {
+    width: 1.21rem;
+    font: .17rem/.31rem "微软雅黑"; }
+
+.zy_bind_account ul {
+  margin-bottom: .8rem;
+  margin-top: .1rem; }
+  .zy_bind_account ul li {
+    border-top: .01rem solid #efeff4; }
+    .zy_bind_account ul li a {
+      display: block;
+      padding: .32rem .29rem;
+      background: #fff; }
+      .zy_bind_account ul li a label, .zy_bind_account ul li a input {
+        color: #333; }
+      .zy_bind_account ul li a label {
+        width: 1.81rem;
+        font-size: 0.25rem;
+        font-family: "微软雅黑"; }
+      .zy_bind_account ul li a input {
+        width: 4.8rem;
+        color: #999;
+        font: .25rem/.25rem "微软雅黑";
+        padding: 0; }
+
+.payment_box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999999999999;
+  display: flex;
+  /*Flex布局*/
+  display: -webkit-flex;
+  /* Safari */
+  align-items: center; }
+  .payment_box .payment_boxs {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 1.2rem; }
+    .payment_box .payment_boxs h2 {
+      font: .32rem/.5rem "微软雅黑";
+      padding: .2rem;
+      border-bottom: .01rem solid #e4e2e4;
+      color: #333; }
+      .payment_box .payment_boxs h2 span, .payment_box .payment_boxs h2 em {
+        font-weight: bold; }
+    .payment_box .payment_boxs .pay_success {
+      font: .22rem/.45rem "微软雅黑";
+      color: #666;
+      text-align: center;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding-top: 1.2rem; }
+      .payment_box .payment_boxs .pay_success dl {
+        margin: 0 auto; }
+      .payment_box .payment_boxs .pay_success dt {
+        margin: 0 auto;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: .3rem; }
+      .payment_box .payment_boxs .pay_success dd {
+        font: .36rem/.7rem "微软雅黑";
+        padding: 0 .2rem; }
+        .payment_box .payment_boxs .pay_success dd a {
+          width: 2.4rem;
+          color: #666;
+          margin-top: .2rem; }
+      .payment_box .payment_boxs .pay_success .tip {
+        font: .24rem/.4rem "微软雅黑"; }
+      .payment_box .payment_boxs .pay_success .pay_success1 {
+        background: url(../images/chongcheng1.png) no-repeat center;
+        background-size: cover; }
+      .payment_box .payment_boxs .pay_success .pay_await1 {
+        background: url(../images/chongdeng.png) no-repeat center;
+        background-size: cover; }
+      .payment_box .payment_boxs .pay_success .pay_error1 {
+        background: url(../images/chongbai.png) no-repeat center;
+        background-size: cover; }
+      .payment_box .payment_boxs .pay_success dd {
+        font-size: .36rem;
+        line-height: .5rem; }
+    .payment_box .payment_boxs .pay_title dt {
+      padding: 0 20%;
+      font: .22rem/.45rem "微软雅黑";
+      color: #666;
+      margin-top: .2rem;
+      text-align: center;
+      font-weight: bold; }
+    .payment_box .payment_boxs .pay_title dd {
+      padding: 0 20%;
+      font: .3rem/.45rem "微软雅黑";
+      color: #333;
+      margin-top: .2rem;
+      text-align: center; }
+    .payment_box .payment_boxs .zy_code_box dt {
+      position: relative;
+      margin-top: .2rem; }
+      .payment_box .payment_boxs .zy_code_box dt span {
+        width: 4rem;
+        height: 4rem;
+        margin: auto;
+        display: block;
+        padding: .08rem;
+        border: .01rem solid #ccc;
+        position: relative; }
+        .payment_box .payment_boxs .zy_code_box dt span img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          width: 4rem; }
+      .payment_box .payment_boxs .zy_code_box dt em {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        width: 4.16rem;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        font: .4rem/4.08rem "微软雅黑"; }
+    .payment_box .payment_boxs .zy_code_box dd {
+      margin-top: .2rem; }
+      .payment_box .payment_boxs .zy_code_box dd p {
+        font: .22rem/.45rem "微软雅黑";
+        text-align: center;
+        color: #666; }
+        .payment_box .payment_boxs .zy_code_box dd p span {
+          margin: 0 .1rem; }
+      .payment_box .payment_boxs .zy_code_box dd h4 {
+        vertical-align: top;
+        font-size: 0;
+        text-align: center;
+        color: #666; }
+        .payment_box .payment_boxs .zy_code_box dd h4 em, .payment_box .payment_boxs .zy_code_box dd h4 span {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 .1rem;
+          font: .22rem/.45rem "微软雅黑";
+          height: .45rem; }
+          .payment_box .payment_boxs .zy_code_box dd h4 em img, .payment_box .payment_boxs .zy_code_box dd h4 span img {
+            height: 100%; }
+
+.application_brancdt {
+  padding: .08rem .2rem; }
+  .application_brancdt .substation h2 {
+    font: .26rem/.7rem "微软雅黑";
+    color: #999;
+    text-align: left;
+    font-weight: bold; }
+  .application_brancdt .substation .box {
+    width: 100%;
+    height: 3.09rem;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    z-index: 2; }
+    .application_brancdt .substation .box ul {
+      position: absolute;
+      width: 9.58rem;
+      height: 3.06rem;
+      left: 0; }
+    .application_brancdt .substation .box li {
+      width: 1.84rem;
+      height: 2.11rem;
+      border: .02rem solid transparent;
+      float: left;
+      margin-right: .18rem;
+      background: #fff;
+      border-radius: .08rem;
+      padding: .38rem .56rem .55rem .56rem; }
+      .application_brancdt .substation .box li h3 {
+        font: .26rem/.46rem "微软雅黑";
+        color: #333;
+        font-weight: bold;
+        text-align: center; }
+      .application_brancdt .substation .box li h4 {
+        font: .24rem/.55rem "微软雅黑";
+        color: #999;
+        text-align: center;
+        border-bottom: .01rem solid #e3e3e3; }
+        .application_brancdt .substation .box li h4 span {
+          color: #4399fe;
+          font-size: .35rem;
+          font-weight: bold;
+          margin-right: .12rem; }
+      .application_brancdt .substation .box li dl {
+        padding-top: .12rem; }
+        .application_brancdt .substation .box li dl dt, .application_brancdt .substation .box li dl dd {
+          font: .23rem/.43rem "微软雅黑";
+          color: #333;
+          text-align: center; }
+    .application_brancdt .substation .box li:nth-child(2) {
+      left: 3.18rem; }
+    .application_brancdt .substation .box li:nth-child(3) {
+      left: 6.36rem; }
+    .application_brancdt .substation .box .on {
+      border-color: #4399fe;
+      background: #fff url(../images/true1.png) no-repeat right bottom;
+      background-size: .38rem;
+      transition: border-color .3s ease-in; }
+  .application_brancdt .box::-webkit-scrollbar {
+    display: none; }
+  .application_brancdt .information {
+    padding-top: .34rem; }
+    .application_brancdt .information h2 {
+      font: .26rem/.76rem "微软雅黑";
+      color: #999;
+      font-weight: bold; }
+    .application_brancdt .information section {
+      margin: 0; }
+      .application_brancdt .information section b {
+        top: 0.19rem !important; }
+      .application_brancdt .information section .per {
+        border-radius: 0.08rem !important; }
+      .application_brancdt .information section .ym {
+        border: none !important; }
+        .application_brancdt .information section .ym .ejym {
+          width: 3.48rem;
+          border: .02rem solid #cccccc;
+          padding: 0.14rem .28rem;
+          position: relative;
+          border-radius: 0.08rem !important; }
+          .application_brancdt .information section .ym .ejym span, .application_brancdt .information section .ym .ejym input {
+            font: 0.24rem/0.42rem "微软雅黑"; }
+          .application_brancdt .information section .ym .ejym input {
+            width: 2rem; }
+          .application_brancdt .information section .ym .ejym span {
+            color: #999;
+            margin-right: .3rem; }
+        .application_brancdt .information section .ym .yms {
+          width: 1.84rem;
+          border: .02rem solid #cccccc;
+          padding: 0.14rem 0.28rem !important;
+          position: relative;
+          border-radius: 0.08rem !important;
+          color: #999 !important; }
+          .application_brancdt .information section .ym .yms em {
+            width: 1.2rem !important;
+            font: 0.24rem/0.42rem "微软雅黑"; }
+          .application_brancdt .information section .ym .yms i {
+            width: 0.58rem;
+            position: relative;
+            height: 0.42rem; }
+            .application_brancdt .information section .ym .yms i img {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              top: 0;
+              margin: auto;
+              height: 0.1rem; }
+          .application_brancdt .information section .ym .yms .select {
+            position: absolute;
+            top: .8rem;
+            width: 100%;
+            background: #fff;
+            z-index: 9;
+            left: -0.02rem;
+            border: .01rem solid #ccc;
+            border-radius: .08rem; }
+            .application_brancdt .information section .ym .yms .select h5 {
+              font: 0.24rem/0.42rem "微软雅黑";
+              padding: 0.14rem 0.28rem;
+              color: #666;
+              border-bottom: .01rem solid #eee; }
+            .application_brancdt .information section .ym .yms .select .active {
+              background: #f2f2f2; }
+        .application_brancdt .information section .ym .on .select {
+          display: block;
+          animation: toup .3s both; }
+
+@-webkit-keyframes toup {
+  from {
+    -webkit-transform: translate3d(0, 30px, 0);
+    opacity: .3; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes toup {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: .3; }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }

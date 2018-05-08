@@ -50,15 +50,17 @@
         </div>
         <div class="common_box">
             <div class="getcash_user_info on clearfix">
-                <h3 class="l">
+                <!-- <h3 class="l">
                     <img src="images/zy_zfb.png" alt="">
-                </h3>
+                </h3> -->
                 <dl class="l">
-                    <dt>
-                        小明童鞋
+                    <dt class="clearfix">
+                        <label for="username1" class="l">收款人姓名：</label>
+                        <input type="text" id="username1" class="borderNone l" placeholder="请输入收款人姓名">
                     </dt>
-                    <dd>
-                        2658451@qq.com
+                    <dd class="clearfix">
+                        <label for="account1" class="l">收款人账号：</label>
+                        <input type="text" id="account1" class="borderNone l" placeholder="请输入收款人账号">
                     </dd>
                 </dl>
             </div>
@@ -67,7 +69,7 @@
                 <dl>
                     <dt class="clearfix">
                         <span class="l">
-                            <font size="3">￥</font><i>1.24</i>
+                            <font size="3">￥</font><i><input type="text" autofocus class="borderNone" value="1.24"></i>
                         </span>
                         <em class="r">
                             <i>手续费</i>
